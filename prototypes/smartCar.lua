@@ -9,11 +9,21 @@ smartCar.icons = {
 	},
 }
 
-local recipe = table.deepcopy(data.raw.["recipe"]["car"])
+local item = {
+	type = "item",
+	name = "smart-car",
+	icon = "__base__/graphics/icons/car.png",
+	flags = {"goes-to-quickbar"},
+    subgroup = "transport",
+    place_result = "autocar",
+	stack_size = 1,
+}
+
+local recipe = table.deepcopy(data.raw["recipe"]["car"])
 
 recipe.enabled = true
 recipe.name = "smart-car"
-recipe.ingredients = {{"engine",8}, {"iron-plate",20}, {"steel",5}, {"green-circuit":20}}
+recipe.ingredients = {{"engine-unit",8},{"iron-plate",20},{"steel-plate",5},{"electronic-circuit",20}}
 recipe.result = "smart-car"
 
-data:extend{smartCar, recipe}
+data:extend({smartCar, item, recipe})
