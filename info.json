@@ -1,0 +1,11 @@
+{
+    "name": "Smart Car",
+    "version": "0.1.0",
+    "title": "Call a car to your position",
+    "author": "Olmo Buining",
+    "contact": "",
+    "homepage": "https://github.com/olmobuining/factorio-call-car",
+    "factorio_version": "0.17",
+    "dependencies": ["base >= 0.17"],
+    "description": "This mod allows to to call the closest car to your position (in a direct line)"
+}
