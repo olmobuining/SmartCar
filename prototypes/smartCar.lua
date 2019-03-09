@@ -13,9 +13,9 @@ local item = {
 	type = "item",
 	name = "smart-car",
 	icon = "__base__/graphics/icons/car.png",
-	flags = {"goes-to-quickbar"},
+	icon_size = 32,
     subgroup = "transport",
-    place_result = "autocar",
+    place_result = "smart-car",
 	stack_size = 1,
 }
 
